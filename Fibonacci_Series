@@ -1,0 +1,25 @@
+//Fibonacci Series
+using System;
+
+class Fibonacci
+{
+    static void Main()
+    {
+        Console.WriteLine("Enter the no of terms");
+        int term = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Series");
+        int a=0,  b = 1;
+        //iteration of series
+        for(int i=0;i<term;i++)
+        {
+            Console.Write(a + " ");
+            int  c = a + b;
+            a = b;
+            b = c;
+            
+        }
+
+        
+    }
+}
